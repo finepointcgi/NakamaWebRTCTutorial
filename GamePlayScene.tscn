@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://GamePlayManager.gd" type="Script" id=1]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=2]
+
+[node name="GameManager" type="Node2D" groups=["GameWorld"]]
+script = ExtResource( 1 )
+player = ExtResource( 2 )
+
+[node name="SpawnPlayerPositions" type="Node2D" parent="."]
+
+[node name="1" type="Position2D" parent="SpawnPlayerPositions"]
+position = Vector2( 108, 79 )
+
+[node name="2" type="Position2D" parent="SpawnPlayerPositions"]
+position = Vector2( 258, 79 )
+
+[node name="3" type="Position2D" parent="SpawnPlayerPositions"]
+position = Vector2( 108, 238 )
+
+[node name="4" type="Position2D" parent="SpawnPlayerPositions"]
+position = Vector2( 256, 238 )
+
+[node name="PlayersSpawnUnder" type="Node2D" parent="."]
